@@ -1,0 +1,15 @@
+{
+  "name": "a3-js-utilities",
+  "version": "1.0.0",
+  "description": "javascript utility script that maintainer uses. but not worth separating it into a module",
+  "main": "src/index.js",
+  "repository": "https://github.com/as3mbus/a3-js-utilities.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utility"
+  ],
+  "author": "as3mbus",
+  "license": "MIT"
+}
