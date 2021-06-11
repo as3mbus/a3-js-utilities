@@ -1,4 +1,4 @@
-# A3-Phaser-Object-ext
+# A3 Javascript Utilities
 
 ![version](https://img.shields.io/badge/Version-1.0.0-brightgreen)
 
