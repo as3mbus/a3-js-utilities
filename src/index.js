@@ -34,3 +34,14 @@ export function propName(prop, value)
 export function isEmptyObject(obj) {
     return Object.keys(obj).length === 0 && obj.constructor === Object;
 }
+
+/**
+ * clamp number between two limits
+ * @param {number} num
+ * @param {number} a
+ * @param {number} b
+ * @return {number}
+ */
+export function clampNumber(num, a, b)
+{return Math.max(Math.min(num, Math.max(a, b)), Math.min(a, b));}
+
