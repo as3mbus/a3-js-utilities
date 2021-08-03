@@ -1,6 +1,6 @@
 {
   "name": "a3-js-utilities",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "javascript utility script that maintainer uses. but not worth separating it into a module",
   "main": "src/index.js",
   "repository": "https://github.com/as3mbus/a3-js-utilities.git",
