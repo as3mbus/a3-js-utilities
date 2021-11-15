@@ -64,3 +64,19 @@ export function lengthFormatting(string, length)
  */
 export function replaceEOLWith3Dots(string)
 {return string.substring(0, string.length - 3) + "..."}
+
+/**
+ * get file name from a file path
+ * @param {string} fullPath
+ * @return {string}
+ */
+export function fileNameOf(fullPath)
+{return fullPath.split(/[\\/]/).pop();}
+
+/**
+ * remove single extension suffix
+ * @param {string} fileName
+ * @return {string}
+ */
+export function removeFileExtensionOn(fileName)
+{return fileName.replace(/\.[^/.]+$/, '');}

@@ -1,6 +1,7 @@
 export * from "./string_formatting"
 export * from "./time_string_conversion"
 export * from "./response_code"
+export * from "./ColorTool"
 
 /**
  * @param {Array} array
