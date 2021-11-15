@@ -1,7 +1,9 @@
-export * from "./string_formatting"
-export * from "./time_string_conversion"
-export * from "./response_code"
-export * from "./ColorTool"
+import ColorTool from "./ColorTool";
+
+export *            from "./string_formatting"
+export *            from "./time_string_conversion"
+export *            from "./response_code"
+export ColorTool, * from "./ColorTool"
 
 /**
  * @param {Array} array
@@ -32,7 +34,8 @@ export function propName(prop, value)
     return null;
 }
 
-export function isEmptyObject(obj) {
+export function isEmptyObject(obj)
+{
     return Object.keys(obj).length === 0 && obj.constructor === Object;
 }
 
@@ -46,3 +49,19 @@ export function isEmptyObject(obj) {
 export function clampNumber(num, a, b)
 {return Math.max(Math.min(num, Math.max(a, b)), Math.min(a, b));}
 
+/**
+ * @param {function} executor
+ * @param {number} timeout
+ * @return {Promise<unknown>}
+ */
+async function asyncTimeOut(executor, timeout)
+{
+    return new Promise((resolve) =>
+    {
+        setTimeout(() =>
+        {
+            const result = executor();
+            resolve(result);
+        }, timeout);
+    });
+}
