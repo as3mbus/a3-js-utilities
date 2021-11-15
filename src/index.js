@@ -1,9 +1,7 @@
-import ColorTool from "./ColorTool";
-
-export *            from "./string_formatting"
-export *            from "./time_string_conversion"
-export *            from "./response_code"
-export ColorTool, * from "./ColorTool"
+export *                      from "./string_formatting"
+export *                      from "./time_string_conversion"
+export *                      from "./response_code"
+export {default as ColorTool} from "./ColorTool"
 
 /**
  * @param {Array} array
